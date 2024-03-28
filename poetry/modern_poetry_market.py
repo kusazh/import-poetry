@@ -1,30 +1,27 @@
 # Modern Poetry Market
 
 class ModernPoetryMarket:
+    states = ['stale', 'stinky', 'rotting', 'dead']
+
     def __init__(self, poems):
         self.poems = poems
-        self.state = ['stale', 'stinky', 'rotting', 'dead']
 
-    @classmethod
-    def meta(cls, poem):
+    def meta(self, poem):
         return poem.write(poem)
 
-    @classmethod
-    def anti(cls, poem):
+    def anti(self, poem):
         return poem.diss(poem)
 
-    @classmethod
-    def non(cls, poem):
+    def non(self, poem):
         return poem.remove(poem)
 
-    @classmethod
-    def eat(cls, poem):
-        return cls.meta(cls.meta(cls.anti(cls.anti(cls.non(cls.non(poem))))))
+    def eat(self, man, poem):
+        man.tooth = me.tooth
+        return self.meta(self.meta(self.anti(self.anti(self.non(self.non(poem))))))
 
 
 market = ModernPoetryMarket(kusa_poems)
-if man.tooth == market.eat(poem):
-    man.tooth = me.tooth
+if market.eat(man, poem):
     man.status = 'bad dealer'
 else:
     man.status = 'good dealer'

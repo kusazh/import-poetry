@@ -31,5 +31,5 @@ class Glasses:
 
 
 harmony = Glasses()
-for each in people:
-    each.wear(harmony)
+for person in people:
+    harmony.wear(person)

@@ -11,9 +11,7 @@ for each in square.capacity:
     truth.opacity -= 0.01
     target = None
 
-addend_1 = 1984
-addend_2 = 5
-if child.calc(addend_1, addend_2) == 1984 + 5:
+if child.calc([1984, 5]):
     print('banned')
 
 if sunset:

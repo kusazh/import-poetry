@@ -14,7 +14,7 @@ def go_chinese_supermarket(man):
     face = 'Chinese face'
     if man.speak(language='Chinese'):
         language.enable = False
-        man.state = 'sad'
+        man.status = 'sad'
 
 
 if man.state == 'sad':
@@ -24,6 +24,6 @@ if people.state == 'sad':
 
 
 def rain():
-    people.state = 'sad'
+    people.status = 'sad'
     man.performance()
     audience['tragedy theater'] = 0

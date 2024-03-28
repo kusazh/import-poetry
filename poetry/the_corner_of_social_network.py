@@ -2,11 +2,12 @@
 
 social_network.online_user = 0
 me.cry()
-me.thumbup(social_network.post_list)
+for post in social_network.post_list:
+    me.thumb_up(post)
 
 if today.hour == 0:
-    me.phobia.append(darkness.name)
-    darkness.habit.append(me.name)
+    me.phobias.append(darkness.name)
+    darkness.habits.append(me.name)
 
 button.press()
 sadness.enter(me)

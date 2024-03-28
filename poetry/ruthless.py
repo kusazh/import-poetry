@@ -15,4 +15,5 @@ me.location = zoo.location
 if season == 'winter':
     zoo.is_open = False
 horse.state = 'hungry'
-me.hug(horse).set_invisible()
+with invisible():
+    me.hug(horse)

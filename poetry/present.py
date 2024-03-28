@@ -2,7 +2,7 @@
 
 present = yesterday.write(tomorrow)
 present = future.mirror(history)
-present = str(birth) + str(death)
+present = str(birth + death)
 present.send(you)
 
 present = eye.see(flower.plant(year=4500000000))

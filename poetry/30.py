@@ -20,13 +20,15 @@ elif year == today.year:
     somebody.see(['talk', 'walk', 'call'])
 elif year > today.year:
     you.state = 'scared'
-    people = [person.age += date.year - today.year for person in people]
+    for person in people:
+        person.age += year - today.year
 
 baby.born()
 baby.love('China')
 book.validity = False
 
-people = [person.location = 'heaven' for person in people]
+for person in people:
+    person.location = 'heaven'
 baby.love('Winnie')
 dictionary = {'China' : 'DPRK', 'Winnie' : 'emperor'}
 baby.kneel()

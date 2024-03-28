@@ -1,8 +1,8 @@
 # Creature
 
-you.item = ['forehead', 'nose', 'chest', 'navel']
+you.items = ['forehead', 'nose', 'chest', 'navel']
 childhood = ['sliding board', 'plastic foam', 'toy']
-for each in you.item:
+for each in you.items:
     me.touch(each)
     for item in childhood:
         me.remind(item)
@@ -18,4 +18,4 @@ period = 'prehistory'
 
 you.item.append('parting line')
 me.location = gods_workshop.location
-gods_workshop.item = ['gentle eyes', 'heat', 'lightning']
+gods_workshop.items = ['gentle eyes', 'heat', 'lightning']

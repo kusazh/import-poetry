@@ -8,9 +8,10 @@ while bike.speed != 0:
 me.location = city or outskirts
 me.left = me.right = 'hostel'
 if window.see(me):
-    me.item.remove('helmet')
+    me.items.remove('helmet')
 
 try:
     me.betray(me.paper, 'gale')
     me.crush(me.blood, 'indifference')
-me.state = random.choice(['dying', 'flying'])
+finally:
+    me.state = random.choice(['dying', 'flying'])
