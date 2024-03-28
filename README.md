@@ -1,4 +1,6 @@
 # import poetry
+**新增** ChatGPT 批评本：[《纪菩提重评皮同诗》](https://github.com/kusazh/import-poetry/wiki/纪菩提重评皮同诗)
+
 ```python
 # Copyright 2020 kusazh
 
